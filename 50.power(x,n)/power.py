@@ -5,7 +5,7 @@ class Solution:
         elif n < 0:
             x = 1/x
             n = -n
-        temp = 1
+        temp = 1.0
         while n > 0:
             if n % 2 == 1:
                 temp *= x
