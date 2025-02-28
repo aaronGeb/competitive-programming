@@ -15,3 +15,25 @@ for _ in range(n):
 # Print the final chat order
 for name in chat_order:
     print(name)
+
+
+
+
+******************correct option*****************
+def chat_order(messages):
+    seen = set() 
+    output = []  
+
+    for message in reversed(messages):
+        if message not in seen:
+            seen.add(message)
+            output.append(message)
+
+    return "\n".join(output) 
+
+t = int(input())
+message = []
+for _ in range(t):
+    message.append(input())
+
+print(chat_order(message))
